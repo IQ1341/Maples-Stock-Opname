@@ -1,0 +1,75 @@
+/* src/routes/warehouse.css */
+
+.container {
+    display: flex;
+    height: 100%; 
+    position: relative;
+  }
+  
+  .sidebar {
+    width: 10%;
+    padding: 10px;
+    height: 50%;
+    position: fixed;
+}
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 20px 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333; 
+    padding: 20px;
+    display: block;
+    background-color: #fff; 
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    background-color: #182433; 
+    color: #fff;
+  }
+  
+  .sidebar a.active {
+    background-color: #182433; 
+    color: #fff;
+  }
+  
+  .sidebar a.inactive {
+    background-color: #fff; 
+    color: #333; 
+  }
+  
+  .content2 {
+    width: calc(100% - 10%);
+    margin-left: 13%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      box-shadow: none;
+    }
+  
+    .content2 {
+      width: 110%;
+      margin-left: -5%;
+    }
+  }
+  

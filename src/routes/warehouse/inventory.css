@@ -1,0 +1,59 @@
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .modal-content {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .modal-header .close {
+    font-size: 1.5rem;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  .table {
+    width: 100%;
+  }
+
+  .table thead th {
+    background-color: #ffffff;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: none;
+    font-size: 14px;
+  }
+  
+  .table img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .img-thumbnail {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .modal.fade.show {
+    display: block;
+  }
+  
+  .table-row-even {
+    background-color: #F6F8FB;
+  }
+  
+  .table-row-odd {
+    background-color: #FFFFFF;
+  }
+  
+  .button-right {
+    float: right;
+  }

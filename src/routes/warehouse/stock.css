@@ -1,0 +1,221 @@
+.container2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto; /* Mengizinkan scroll horizontal */
+}
+
+.table {
+  width: 100%; /* Memastikan tabel menggunakan lebar penuh */
+  border-collapse: collapse;
+}
+
+.table thead th {
+  background-color: #ffffff;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-transform: none;
+  font-size: 14px;
+}
+
+/* Style untuk modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay gelap di belakang modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Z-index lebih tinggi agar berada di atas elemen lain */
+    pointer-events: auto; /* Memungkinkan interaksi dengan modal */
+}
+
+.modal-content2 {
+    background: white;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+/* Nonaktifkan interaksi dengan konten di luar modal */
+body.modal-open {
+    overflow: hidden; /* Mencegah scroll halaman di luar modal */
+}
+
+.modal-open *:not(.modal-overlay) {
+    pointer-events: none; /* Nonaktifkan interaksi di luar modal */
+}
+
+/* Input Section Styles */
+
+
+.input-section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-section, .search-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-section label, .search-section label {
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"], input[type="number"], textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.inputquantity {
+    width: 60px; /* Adjust width as needed */
+    text-align: center; /* Center text within the input */
+    padding: 4px; /* Less padding for a shorter appearance */
+}
+
+textarea {
+    resize: vertical;
+}
+
+.input-price,
+.input-quantity {
+    width: 100px; /* Sesuaikan ukuran sesuai kebutuhan */
+    text-align: center; /* Align text ke kanan untuk harga */
+}
+
+/* Search Section Styles */
+.search-section input[type="text"] {
+    width: 100%;
+}
+
+
+/* Total Section Styles */
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Modal Footer Styles */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Buttons on Table Row Styles */
+button {
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+button:hover {
+    background-color: #142233; /* Darker shade on hover */
+}
+
+
+.note-content {
+    max-width: 400px; /* Set the maximum width for the note */
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    word-wrap: break-word; /* Ensure long words break properly */
+    margin-top: 0px; /* Add space above the note for better readability */
+    overflow-wrap: break-word; /* Handle text overflow */
+  }
+  
+  
+  .total-section {
+    margin-top: 1em;
+    font-weight: bold;
+  }
+  
+  .total-section span {
+    margin-right: 1em;
+  }
+  
+  .table-row-even {
+    background-color: #F6F8FB;
+  }
+  
+  .table-row-odd {
+    background-color: #FFFFFF;
+  }
+
+    /* opname */
+.btn-opname {
+  width: 100px;
+}
+.input-opname {
+  width: 60px;
+  padding: 5px;
+  text-align: right;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* CSS untuk kotak last updated */
+.last-updated-container {
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Warna hijau untuk data yang sudah diupdate */
+.recent {
+  background-color: #218c74;
+}
+
+/* Warna merah untuk data yang belum diupdate dalam 7 hari */
+.outdated {
+  background-color: #b33939;
+}
+
+
+
+  @media (max-width: 768px) {
+    .total-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }

@@ -1,0 +1,46 @@
+@media print {
+  .noprint {
+    display: none;
+  }
+}
+
+
+
+.Navbar_item {
+  margin: 0;
+  padding: 0;
+}
+.Navbar_title {
+  font-weight: 500;
+  font-size: 14px;
+}
+.Navbar_active .Navbar_title {
+  color: #167e73;
+  font-weight: 500;
+  font-size: 14px;
+}
+.Navbar_active .Navbar_icon {
+  color: #167e73;
+}
+.Navbar_active .dropdown-toggle:after {
+  color: #167e73;
+}
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-light .nav-item.active:after {
+    border-bottom-width: 0px;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1.75rem;
+    padding-left: 0.45rem;
+  }
+}
+.Navbar_dark {
+  background: #216ac4;
+  color: #ffffff;
+}
+.Navbar_avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 30px;
+  border: solid 2px #1a59a5;
+}

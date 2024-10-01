@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'ProductSans';
+  src: local('ProductSans'), url(./assets/fonts/ProductSans-Regular.ttf) format('truetype');
+}
+
+body {
+  font-family: 'ProductSans', 'Lato', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+    overflow: hidden; 
+}
+
+.page-header {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.content {
+  height: calc(100vh - 100px);
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 20px; /* Optional: Adds some padding to the content area */
+  box-sizing: border-box; /* Ensures padding is included in height calculation */
+}
+
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
